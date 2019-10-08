@@ -24,14 +24,38 @@ const sampleArticle = {
 }
 
 const NewsList = ({article}) => {
+    const [articles, setArticles] = useState(null);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            setLoading(true);
+            try {
+                const response = await axios.get(
+                    'https://newsapi.org/v2/top-headlines?country=kr&apiKey=e9fdf950860a45daa25430d1e3475df2'
+                );
+                setArticles(response.data.articles);
+            } catch (e) {
+                console.log(e);
+            }
+            setLoading(false);
+        };
+        fetchData();
+    }, []);
+
+    if (loading) {
+        return <NewsListBlock>대기 중...</NewsListBlock>
+    }
+
+    if (!articles) {
+        return null;
+    }
+
     return (
         <NewsListBlock>
-            <NewsItem article={sampleArticle}></NewsItem>
-            <NewsItem article={sampleArticle}></NewsItem>
-            <NewsItem article={sampleArticle}></NewsItem>
-            <NewsItem article={sampleArticle}></NewsItem>
-            <NewsItem article={sampleArticle}></NewsItem>
-            <NewsItem article={sampleArticle}></NewsItem>
+            {articles.map(article => (
+                <NewsItem key={article.url} article={article}></NewsItem>
+            ))}
         </NewsListBlock>
     );
 };
