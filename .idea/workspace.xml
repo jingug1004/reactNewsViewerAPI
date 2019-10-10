@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="972c6778-640b-48db-8d1b-7d58e6a25bf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/NewsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/usePromise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Categories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewsList.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +24,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/App.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="406">
-                      <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+                    <state relative-caret-position="112">
+                      <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
                       <folding>
                         <element signature="e#0#38#0" expanded="true" />
                       </folding>
@@ -50,11 +49,11 @@
           </split-first>
           <split-second>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/components/NewsItem.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="519">
-                      <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+                    <state relative-caret-position="505">
+                      <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
                       <folding>
                         <element signature="e#0#26#0" expanded="true" />
                       </folding>
@@ -62,7 +61,7 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/pages/NewsPage.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="252">
@@ -94,8 +93,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/components/NewsList.js">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="532">
-                      <caret line="38" selection-start-line="38" selection-end-line="38" />
+                    <state relative-caret-position="294">
+                      <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
                       <folding>
                         <element signature="e#0#49#0" expanded="true" />
                       </folding>
@@ -107,11 +106,23 @@
           </split-first>
           <split-second>
             <leaf>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/components/Categories.js">
                   <provider selected="true" editor-type-id="text-editor">
                     <state relative-caret-position="561">
                       <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+                      <folding>
+                        <element signature="e#0#49#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/lib/usePromise.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="294">
+                      <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
                       <folding>
                         <element signature="e#0#49#0" expanded="true" />
                       </folding>
@@ -139,11 +150,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/App.test.js" />
         <option value="$PROJECT_DIR$/src/components/NewsItem.js" />
-        <option value="$PROJECT_DIR$/src/components/NewsList.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/pages/NewsPage.js" />
         <option value="$PROJECT_DIR$/src/components/Categories.js" />
+        <option value="$PROJECT_DIR$/src/lib/usePromise.js" />
+        <option value="$PROJECT_DIR$/src/components/NewsList.js" />
       </list>
     </option>
   </component>
@@ -180,6 +192,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="news-viewer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="news-viewer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -190,7 +208,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/Program Files (x86)/Android/android-sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -200,6 +218,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\A\WebstormProjects\news-viewer\src\lib" />
       <recent name="C:\Users\A\WebstormProjects\news-viewer\src\pages" />
       <recent name="C:\Users\A\WebstormProjects\news-viewer\src\components" />
     </key>
@@ -317,7 +336,7 @@
       <workItem from="1570416403479" duration="1053000" />
       <workItem from="1570446056375" duration="3485000" />
       <workItem from="1570493257147" duration="6528000" />
-      <workItem from="1570684656415" duration="5762000" />
+      <workItem from="1570684656415" duration="7200000" />
     </task>
     <task id="LOCAL-00001" summary="191007(월) - 리액트 뉴스 뷰어 만들기">
       <created>1570452535407</created>
@@ -347,11 +366,18 @@
       <option name="project" value="LOCAL" />
       <updated>1570688581700</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="191010(목)_02 - 리액트 뉴스 뷰어 만들기 - 리액트 라우터 적용하기">
+      <created>1570690484628</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570690484628</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16828000" />
+    <option name="totallyTimeSpent" value="18266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="1" width="3852" height="1046" extended-state="0" />
@@ -387,7 +413,8 @@
     <MESSAGE value="191008(화) - 리액트 뉴스 뷰어 만들기" />
     <MESSAGE value="191008(화) - 리액트 뉴스 뷰어 만들기 - 뉴스 잘 보임" />
     <MESSAGE value="191010(목) - 리액트 뉴스 뷰어 만들기 - 리액트 라우터 적용하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="191010(목) - 리액트 뉴스 뷰어 만들기 - 리액트 라우터 적용하기" />
+    <MESSAGE value="191010(목)_02 - 리액트 뉴스 뷰어 만들기 - 리액트 라우터 적용하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="191010(목)_02 - 리액트 뉴스 뷰어 만들기 - 리액트 라우터 적용하기" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/App.test.js">
@@ -417,32 +444,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NewsItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NewsList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Categories.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -457,22 +474,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/components/NewsItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        <state relative-caret-position="505">
+          <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Categories.js">
+    <entry file="file://$PROJECT_DIR$/src/lib/usePromise.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+        <state relative-caret-position="294">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NewsList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="41" column="44" lean-forward="true" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

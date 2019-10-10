@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import NewsItem from './NewsItem';
 import axios from 'axios';
+import usePromise from '../lib/usePromise';
 
 const NewsListBlock = styled.div`
   box-sizing: border-box;
@@ -17,6 +18,7 @@ const NewsListBlock = styled.div`
 `;
 
 const NewsList = ({category}) => {
+    /*
     const [articles, setArticles] = useState(null);
     const [loading, setLoading] = useState(false);
 
@@ -36,15 +38,27 @@ const NewsList = ({category}) => {
         };
         fetchData();
     }, [category]);
+*/
+    const [loading, response, error] = usePromise(() => {
+        const query = category === 'all' ? '' : `&category=${category}`;
+        return axios.get(
+            `https://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=e9fdf950860a45daa25430d1e3475df2`
+        );
+    }, [category]);
 
     if (loading) {
         return <NewsListBlock>대기 중...</NewsListBlock>
     }
 
-    if (!articles) {
+    if (!response) {
         return null;
     }
 
+    if (error) {
+        return <NewsListBlock>에러 발생</NewsListBlock>;
+    }
+
+    const {articles} = response.data;
     return (
         <NewsListBlock>
             {articles.map(article => (
